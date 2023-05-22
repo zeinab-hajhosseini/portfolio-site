@@ -69,7 +69,7 @@ tabs.forEach(tab =>{
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-const swiper = new Swiper('.portfolio__container', {
+const swiperPortfolio = new Swiper('.portfolio__container', {
     // Optional parameters
     //direction: 'vertical',
     loop: true,
@@ -92,8 +92,15 @@ const swiper = new Swiper('.portfolio__container', {
     },
   });
 
-/*==================== TESTIMONIAL ====================*/
-
+/*==================== Recommendations ====================*/
+const swiperRecommend = new Swiper('.recommend__container', {
+    loop: true,
+    
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
