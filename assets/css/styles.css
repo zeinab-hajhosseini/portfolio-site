@@ -645,7 +645,7 @@ img{
 }
 
 .portfolio__description{
-    margin-bottom:var(--mb-1)
+    margin-bottom:var(--mb-2)
 }
 
 .portfolio__button:hover .button__icon{
@@ -712,9 +712,41 @@ img{
     justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== Recommendations ====================*/
+.recommend__data,
+.recommend__header{
+    display: flex;
+}
 
+.recommend__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
 
+.recommend__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.recommend__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.recommend__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.recommend__description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.recommend__icon-star{
+    color: var(--first-color);
+}
 /*==================== CONTACT ME ====================*/
 
 
