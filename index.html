@@ -785,38 +785,38 @@
                 </div>
             </div>
 
-            <form action="" class="contact__form grid">
+            <form action="" class="contact__form grid" id="contact-form">
                 <div class="contact__inputs grid">
                     <div class="contact__content">
                         <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
+                        <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
                     </div>
     
                     <div class="contact__content">
                         <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">
+                        <input type="email" name="user_email" required placeholder="Enter your email name" class="contact__input">
                     </div>
                 </div>
     
                 <div class="contact__content">
                     <label for="" class="contact__label">Project</label>
-                    <input type="text" class="contact__input">
+                    <input type="text" name="user_project_name" required placeholder="Enter your project name" class="contact__input">
                 </div>
                 <div class="contact__content">
                     <label for="" class="contact__label">Message</label>
-                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    <textarea name="user_project" id="" cols="0" rows="7" required placeholder="Enter description of your project" class="contact__input"></textarea>
                 </div>
+
+                <p class="contact__message" id="contact-message"></p>
     
                 <div>
-                    <a href="#" class="button button--flex">
+                    <button type="submit" class="button button--flex">
                         Send Message
                         <i class="uil uil-message button__icon"></i>
-                    </a>
+                    </button>
                 </div>
             </form>
-        </div>
-
-        
+        </div>   
 
     </main>
 
@@ -873,5 +873,9 @@
 
     <!-- ====================== MAIN JS ======================-->
     <script src="assets/js/main.js"></script>
+
+    <!-- ====================== EMAIL JS ======================-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </body>
 </html>

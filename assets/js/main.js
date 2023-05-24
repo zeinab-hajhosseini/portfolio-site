@@ -162,3 +162,23 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== EMAIL JS ====================*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    // serviceID: service_058i2nf - templateID: template_xa89xz6 - #form - publicKey
+    emailjs.sendForm('service_058i2nf', 'template_xa89xz6', '#contact-form' , 'hSXNHQaI0B4m78Bzs')
+    .then(()=>{
+        // Show sent message
+        contactMessage.textContent = 'Message sent successfully ✅'
+    }, ()=>{
+        // Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
