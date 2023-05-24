@@ -957,7 +957,7 @@ img{
     }
 
     .skills_title{
-        font-size: var(--normal-font-size)
+        font-size: var(--small-font-size)
     }
 
     .qualification__data{
@@ -1114,9 +1114,12 @@ img{
     .qualification__button{
         margin: 0 var(--mb-1);
     }
+
     .qualification__sections{
-        grid-template-columns: 1fr;
-    } 
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
 
     .about__container,
     .skills__container,
@@ -1196,6 +1199,14 @@ img{
     .contact__form{
         width: 460px;
     }
-    
+
+    .portfolio__content{
+        grid-template-columns: repeat(2, 10fr);
+    }
+
+    .portfolio__img{
+        width: 500px;
+    }
+
 
 }

@@ -70,26 +70,18 @@ tabs.forEach(tab =>{
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 const swiperPortfolio = new Swiper('.portfolio__container', {
-    // Optional parameters
-    //direction: 'vertical',
     loop: true,
+    cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
 
 /*==================== Recommendations ====================*/
