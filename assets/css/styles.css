@@ -1200,8 +1200,9 @@ img{
         width: 460px;
     }
 
-    .portfolio__content{
-        grid-template-columns: repeat(2, 10fr);
+    .portfolio__content,
+    .contact__container{
+        grid-template-columns: repeat(2, 3fr);
     }
 
     .portfolio__img{
