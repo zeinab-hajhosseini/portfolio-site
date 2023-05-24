@@ -95,6 +95,8 @@ const swiperPortfolio = new Swiper('.portfolio__container', {
 /*==================== Recommendations ====================*/
 const swiperRecommend = new Swiper('.recommend__container', {
     loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
     
     scrollbar: {
         el: ".swiper-scrollbar",
