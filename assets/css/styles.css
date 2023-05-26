@@ -962,7 +962,7 @@ img{
     }
 
     .skills_title{
-        font-size: var(--small-font-size)
+        font-size: var(--smaller-font-size);
     }
 
     .qualification__data{
@@ -1014,6 +1014,11 @@ img{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .skills_title,
+    .skills__name{
+        font-size: var(--normal-font-size)
     }
 }
 
