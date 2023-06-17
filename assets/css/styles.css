@@ -958,7 +958,7 @@ img{
     }
 
     .home__blob{
-        width: 180px;
+        width: 50px;
     }
 
     .skills_title{
@@ -1002,10 +1002,8 @@ img{
     }
 
     .about__container,
-    .skills__container,
     .portfolio__content,
     .project__container,
-    .contact__container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
